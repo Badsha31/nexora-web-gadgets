@@ -1,0 +1,22 @@
+{
+  "name": "nexora-web-gadgets",
+  "version": "1.0.0",
+  "description": "Multi-layer gadgets website by Nexora Web",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "build": "cd client && npm run build && cd ../server && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "gadgets",
+    "ecommerce",
+    "nexora"
+  ],
+  "author": "Nexora Web",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
